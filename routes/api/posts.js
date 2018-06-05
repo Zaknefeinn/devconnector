@@ -204,7 +204,7 @@ router.delete(
         }
         //Get remove index
         const removeIndex = post.comments
-          .map(index => item._id.toString())
+          .map(item => item._id.toString())
           .indexOf(req.params.comment_id);
 
         //Splice comment out of array
